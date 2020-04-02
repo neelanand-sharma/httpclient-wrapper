@@ -60,3 +60,7 @@ try (HttpClientWrapper client = HttpClientWrapper.configure(
 
 #### [`HttpResponseWrapper.java`](src/main/java/com/nrs/http/HttpResponseConfig.java)
 `HttpResponseWrapper` is a simple class which provides access to the response of the executed HTTP request. developers can access the response body, status code and the headers, if any, by respective getter methods.
+
+## Open Issues
+1. Does not support system defaults for HTTP properties.
+2. Frequent connection reset exceptions under high loads.
